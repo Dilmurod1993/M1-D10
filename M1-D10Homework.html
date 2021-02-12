@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M1.D10 HOMEWORK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap"
+    rel="stylesheet"/>      
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;
+        }
+        </style>
+</head>
+
+<style>
+    body{
+        width: 80%;
+        margin: auto;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        
+            font-size: 40px;
+        }
+
+
+    
+    .my-table{
+        border: 2px solid black;
+        padding: 3rem;
+        border-radius: 15px;
+        margin-right: 3rem;
+        border-collapse: unset;
+        }
+        p{
+            margin: inherit;
+        }
+
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 14px;
+        }       
+        .my-text{
+            visibility: hidden;
+        }    
+        td{
+            border: 2px solid green;
+        }
+        tr{
+            border-style: dotted;
+            border-style: solid;
+            border-color: red;
+        }
+    
+</style>
+<body>
+    <h1 id="banchmark"> Todays Banchmark:</h1>
+    <ol>
+        <li>Introduction: 9 am</li>
+        <li>Coding till 10:30</li>
+        <li>Exam time: 10:30</li>
+        <li>Lunch at 12</li>
+        <li>Continuation of Coding Process</li>
+        <li>Finish coding at 16.45</li>
+        <li>Checking and Uploading an Assignment at 16:50</li>
+        <li>Debrief at 17:50</li>
+    </ol>
+    <h2>Table of Hotels</h2>
+<p>To choose a hotel, click on the picture.</p>
+<hr>
+<div id="container">:::::::::::::::::::::::::::::::::::::::::::::</div>
+<table style="width:100%" class="my-table">
+  <caption>Names of Hotels</caption>
+  <tr>
+    <th>Hotel</th>
+    <th>Images</th>
+    <th>Location</th>
+    <th>Price</th>
+    <th>Contacts</th>
+    <th>Book Here Below</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td><a href="https://gotosilkroad.com/uploads/hotels/TT/TT/m3/14708211040.jpg"><img src="https://gotosilkroad.com/uploads/hotels/TT/TT/m3/14708211040.jpg" alt="" border="3" height="50" width="50" /></a></td>
+    <td>$100</td>
+    <td>3</td>
+    <td>4</td>
+    <td>Here</td>
+  </tr>
+  <tr>
+    <td>Menzifa</td>
+    <td><a href="https://gotosilkroad.com/uploads/hotels/TT/TT/m3/14708211040.jpg"><img src="https://gotosilkroad.com/uploads/hotels/TT/TT/m3/14708211040.jpg" alt="" border="3" height="50" width="50" /></a></td>
+    <td>$50</td>
+    <td>3</td>
+    <td>4</td>
+    <td>Here</td>
+
+  </tr>
+  <tr>
+      <td>March</td>
+      <td><a href="https://gotosilkroad.com/uploads/hotels/TT/TT/m3/14708211040.jpg"><img src="https://gotosilkroad.com/uploads/hotels/TT/TT/m3/14708211040.jpg" alt="" border="3" height="50" width="50" /></a></td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>Here</td>
+  </tr>
+  <tr>
+    <td>Tor Vergata</td>
+    <td><a href="https://www.initalia.it/main_photo/500/5/59.jpg"><img src="https://www.initalia.it/main_photo/500/5/59.jpg" alt="" border="3" height="50" width="50" /></a></td>
+
+    <td>Price</td>
+    <td>Level</td>
+    <td>Contacts</td>
+    <td>Here</td>
+  </tr>
+  
+</table>
+<div>
+    <p> We recommend also our services with:</p>
+    <ul>
+        <li>Meeting in the Airport</li>
+        <li>Rent Car Service</li>
+        <li>Private Driver for the weeekends</li>
+    </ul>
+    <h2 class="my-text"> This Column should be heddien</h2>
+</div>
+<footer>
+    Abous Us:
+    The Tour Company "MURANDO" built in 1993, offer a great journey all over the world. 
+    Our Contacts: +39 328 2883838
+</footer>
+<script>
+    
+
+    let myFubction = function() {
+        let x='John'
+        let y="Doe"
+        console.log( x, "<>", y)
+
+    }
+
+    let myObject = {
+        name: "Hoji",
+        surname: "Isakov",
+        email: "hoji.isakov@gmail.com",
+
+    }
+    delete myObject.email
+    let fruits = ["apple", "orange", "banana", "limon", "grapes", "ananas", "melon", "watermelon", "blueberry", "blackberry"]
+    console.log(fruits) 
+    for (i=0; i<fruits.length; i++){
+        console.log(fruits[i])
+    }
+    let demo = function(){
+        let myNumbers = []
+        for(i=0; i<100;i++){
+            myNumber= Math.floor((Math.random() * 100) + 1);
+            myNumbers.push(myNumber)
+        }
+        console.log(myNumbers)
+        console.log("the max value", Math.max.apply(Math, myNumbers))
+    
+}
+document.getElementById("container")
+
+
+let myElements = document.getElementsByTagName("td")
+for(i=0; i<myElements.length; i++){
+    console.log(myElements[i].innerText)
+}
+
+</script>
+</body>
+</html>
